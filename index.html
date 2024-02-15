@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet/less" type="text/css" href="./src/less/style.less" />
+  <script src="https://cdn.jsdelivr.net/npm/less"></script>
+
+  <title>Frontend Mentor | NFT preview card component</title>
+</head>
+
+<body>
+  <main class="card">
+    <figure class="card__image">
+      <img class="card__image-nft" src="./images/image-equilibrium.jpg" alt="Equilibrium Image"/>
+      <div class="card__image-nft--filter"></div>
+    </figure>
+    <h1 class="card__title">Equilibrium #3429</h1>
+    <p class="card__description">Our Equilibrium collection promotes balance and calm.</p>
+    <div class="card__section">
+      <div class="card__section-currency">
+        <img class="card__currency-icon" src="./images/icon-ethereum.svg" alt="Ethereum Currency"/>
+        <p class="card__currency">0.041ETH</p>
+      </div>
+      <div class="card__section-time">
+        <img class="card__time-icon" src="./images/icon-clock.svg" alt="Clock"/>
+        <p class="card__time-left">3 days left</p>
+      </div>
+    </div>
+    <div class="card__profile">
+      <img class="card__profile-avatar" src="./images/image-avatar.png" alt="Profile Avatar"/>
+      <p class="card__profile-text">Creation of <span class="card__profile-name">Jules Wyvern</span></p>
+    </div>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/R3ygoski">Bernardo Poggioni</a>.
+  </footer>
+</body>
+
+</html>

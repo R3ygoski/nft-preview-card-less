@@ -1,0 +1,119 @@
+@import 'var';
+@import 'mixins';
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: @main-font;
+    font-size: 10px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: @bg-dark-blue;
+    width: 100vw;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 2.4rem;
+    gap: 2rem;
+    border-radius: 1.6rem;
+    background: @cd-dark-blue;
+    .wdt-hgt(300px, 530px);
+    &__image {
+        position: relative;
+        &-nft {
+            border-radius: 1.2rem;
+            .wdt-hgt(100%, auto);
+            &--filter {
+                background: transparent;
+                position: absolute;
+                top: 0;
+                border-radius: 1.2rem;
+                .wdt-hgt(100%, 99%);
+                cursor: pointer;
+                transition: background-color .3s;
+                &:hover {
+                    .background()
+                }
+            }
+        }
+    }
+    &__title {
+        color: @white;
+        font-size: 2.4rem;
+        transition: background-color .3s;
+        cursor: pointer;
+        &:hover {
+            color: @cyan;
+        }
+    }
+    &__description {
+        color: @soft-blue;
+        font-size: 1.6rem;
+    }
+    &__section {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__section-currency {
+        display: flex;
+        gap: 0 1rem;
+    }
+    &__currency {
+        color: @cyan;
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+    &__section-time {
+        display: flex;
+        gap: 0 1rem;
+    }
+    &__time-left {
+    color: @soft-blue;
+    font-weight: bold;
+    font-size: 1.4rem;
+    }
+    &__profile {
+        border-top: 1px solid @ln-dark-blue;
+        padding-top: 2rem;
+        display: flex;
+        align-items: center;
+        &-avatar {
+            border: 1px solid @white;
+            border-radius: 10rem;
+            .wdt-hgt(32px, 32px);
+        }
+        &-text {
+            color: @soft-blue;
+            font-size: 1.6rem;
+            margin-left: 2rem;
+        }
+        &-name {
+            color: @white;
+            font-size: 1.7rem;
+            transition: background-color .3s;
+            cursor: pointer;
+            &:hover {
+                color: @cyan;
+            }
+        }
+    }
+}
+.attribution {
+    position: absolute;
+    bottom: 0;
+    font-size: 1.2rem; 
+    text-align: center;
+    color: @white;
+    a {
+        color: @cyan;
+        font-size: 1.2rem;
+    }
+}
