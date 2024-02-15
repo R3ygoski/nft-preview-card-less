@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/nft-card-made-with-less-d2tf8KwYe3)
+- Live Site URL: [Github](https://r3ygoski.github.io/nft-preview-card-less/)
 
 ## My process
 
